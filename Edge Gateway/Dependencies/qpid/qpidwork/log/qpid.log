@@ -1,0 +1,45 @@
+2017-07-20 04:13:23,380 WARN  [Broker-Config] (o.a.q.s.m.ConfiguredObjectTypeRegistry) - A class definition could not be found while processing the model for 'org.apache.qpid.server.virtualhostnode.berkeleydb.BDBHAVirtualHostNodeImpl': com/sleepycat/je/DatabaseException
+2017-07-20 04:13:23,411 WARN  [Broker-Config] (o.a.q.s.m.ConfiguredObjectTypeRegistry) - A class definition could not be found while processing the model for 'org.apache.qpid.server.virtualhost.berkeleydb.BDBHAVirtualHostImpl': com/sleepycat/je/rep/StateChangeListener
+2017-07-20 04:13:23,740 INFO  [Broker-Config] (o.a.q.s.s.GenericStoreUpgrader) - Broker store has model version 6.1. Number of record(s) 17
+2017-07-20 04:13:23,786 INFO  [Broker-Config] (q.m.a.create) - [Broker] ATH-1001 : Create "passwordFile"
+2017-07-20 04:13:23,786 INFO  [Broker-Config] (q.m.p.create) - [Broker] PRT-1001 : Create "AMQP"
+2017-07-20 04:13:23,786 INFO  [Broker-Config] (q.m.p.create) - [Broker] PRT-1001 : Create "HTTP"
+2017-07-20 04:13:23,896 INFO  [Broker-Config] (q.m.b.config) - [Broker] BRK-1006 : Using configuration : C:\qpidwork\config.json
+2017-07-20 04:13:24,208 WARN  [Broker-Config] (o.a.q.s.s.e.AESKeyFileEncrypterFactory) - The AESKeyFile configuration encryption encryption mechanism is not available. Maximum available AES key length is 128 but 256 is required.Ensure the full strength JCE policy has been installed into your JVM.
+2017-07-20 04:13:24,208 INFO  [Broker-Config] (q.m.b.startup) - [Broker] BRK-1001 : Startup : Version: 6.1.2 Build: 1787067
+2017-07-20 04:13:24,224 INFO  [Broker-Config] (q.m.b.platform) - [Broker] BRK-1010 : Platform : JVM : Oracle Corporation version: 1.8.0_121-b13 OS : Windows NT (unknown) version: 10.0 arch: amd64 cores: 2
+2017-07-20 04:13:24,224 INFO  [Broker-Config] (q.m.b.max_memory) - [Broker] BRK-1011 : Maximum Memory : Heap : 519,438,336 bytes Direct : 1,610,612,736 bytes
+2017-07-20 04:13:24,224 INFO  [Broker-Config] (q.m.b.process) - [Broker] BRK-1017 : Process : PID : 4884
+2017-07-20 04:13:24,255 INFO  [Broker-Config] (q.m.c.created) - [Broker] [vh(/default)/ms(JsonFileConfigStore)] CFG-1001 : Created
+2017-07-20 04:13:24,255 INFO  [Broker-Config] (q.m.c.store_location) - [Broker] [vh(/default)/ms(JsonFileConfigStore)] CFG-1002 : Store location : C:\qpidwork\default\config\
+2017-07-20 04:13:24,255 INFO  [Broker-Config] (q.m.c.recovery_start) - [Broker] [vh(/default)/ms(JsonFileConfigStore)] CFG-1004 : Recovery Start
+2017-07-20 04:13:24,302 INFO  [Broker-Config] (o.a.q.s.s.GenericStoreUpgrader) - VirtualHost store has model version 6.1. Number of record(s) 5
+2017-07-20 04:13:24,318 INFO  [Broker-Config] (q.m.v.created) - [Broker] VHT-1001 : Created : default
+2017-07-20 04:13:24,365 INFO  [Broker-Config] (q.m.c.recovery_complete) - [Broker] [vh(/default)/ms(JsonFileConfigStore)] CFG-1005 : Recovery Complete
+2017-07-20 04:13:24,458 INFO  [VirtualHostNode-default-Config] (q.m.e.created) - [Broker] EXH-1001 : Create : Durable Type: direct Name: amq.direct
+2017-07-20 04:13:24,458 INFO  [VirtualHostNode-default-Config] (q.m.e.created) - [Broker] EXH-1001 : Create : Durable Type: fanout Name: amq.fanout
+2017-07-20 04:13:24,458 INFO  [VirtualHostNode-default-Config] (q.m.e.created) - [Broker] EXH-1001 : Create : Durable Type: headers Name: amq.match
+2017-07-20 04:13:24,458 INFO  [VirtualHostNode-default-Config] (q.m.e.created) - [Broker] EXH-1001 : Create : Durable Type: topic Name: amq.topic
+2017-07-20 04:13:24,490 INFO  [Broker-Config] (q.m.b.listening) - [Broker] BRK-1002 : Starting : Listening on TCP port 5672
+2017-07-20 04:13:24,505 INFO  [Broker-Config] (q.m.m.startup) - [Broker] MNG-1001 : Web Management Startup
+2017-07-20 04:13:24,724 INFO  [Broker-Config] (q.m.m.listening) - [Broker] MNG-1002 : Starting : HTTP : Listening on TCP port 8080
+2017-07-20 04:13:24,724 INFO  [Broker-Config] (q.m.m.ready) - [Broker] MNG-1004 : Web Management Ready
+2017-07-20 04:13:26,679 INFO  [VirtualHostNode-default-Config] (q.m.m.created) - [Broker] [vh(/default)/ms(DerbyMessageStore)] MST-1001 : Created
+2017-07-20 04:13:26,679 INFO  [VirtualHostNode-default-Config] (q.m.m.store_location) - [Broker] [vh(/default)/ms(DerbyMessageStore)] MST-1002 : Store location : C:\qpidwork\default\messages
+2017-07-20 04:13:26,742 INFO  [VirtualHostNode-default-Config] (q.m.m.recovery_start) - [Broker] [vh(/default)/ms(DerbyMessageStore)] MST-1004 : Recovery Start
+2017-07-20 04:13:26,742 INFO  [VirtualHostNode-default-Config] (q.m.t.recovery_start) - [Broker] [vh(/default)/ms(DerbyMessageStore)] TXN-1004 : Recovery Start
+2017-07-20 04:13:26,758 INFO  [VirtualHostNode-default-Config] (q.m.t.recovery_complete) - [Broker] [vh(/default)/ms(DerbyMessageStore)] TXN-1006 : Recovery Complete
+2017-07-20 04:13:26,773 INFO  [VirtualHostNode-default-Config] (q.m.m.recovered) - [Broker] [vh(/default)/ms(DerbyMessageStore)] MST-1005 : Recovered 0 messages
+2017-07-20 04:13:26,773 INFO  [VirtualHostNode-default-Config] (q.m.m.recovery_complete) - [Broker] [vh(/default)/ms(DerbyMessageStore)] MST-1006 : Recovery Complete
+2017-07-20 04:13:26,804 INFO  [Broker-Config] (q.m.b.ready) - [Broker] BRK-1004 : Qpid Broker Ready
+2017-07-20 04:13:42,954 INFO  [HttpManagement-HTTP-109] (q.m.m.open) - [mng:admin(/0:0:0:0:0:0:0:1:62552)] MNG-1007 : Open : User admin
+2017-07-20 04:15:20,959 INFO  [VirtualHostNode-default-Config] (q.m.q.created) - [mng:admin(/0:0:0:0:0:0:0:1:62552)] [vh(/default)/qu(WabtecONEqueue)] QUE-1001 : Create : ID: ac18deef-d68a-407a-8c22-738dfd646c3c Durable
+2017-07-20 04:15:53,224 INFO  [VirtualHostNode-default-Config] (q.m.b.created) - [mng:admin(/0:0:0:0:0:0:0:1:62552)] [vh(/default)/ex(direct/amq.direct)/qu(WabtecONEqueue)/rk(WabtecONEqueue)] BND-1001 : Create
+2017-07-20 04:16:16,620 INFO  [Broker-Config] (q.m.c.open) - [con:0(/127.0.0.1:62560)] CON-1001 : Open : Destination : AMQP(127.0.0.1:5672) : Protocol Version : 0-10
+2017-07-20 04:16:16,854 INFO  [IO-/127.0.0.1:62560] (q.m.c.open) - [con:0(guest@/127.0.0.1:62560/default)] CON-1001 : Open : Destination : AMQP(127.0.0.1:5672) : Protocol Version : 0-10 : Client ID : clientid : Client Version : 6.0.0 : Client Product : qpid
+2017-07-20 04:16:16,932 INFO  [IO-/127.0.0.1:62560] (q.m.c.create) - [con:0(guest@/127.0.0.1:62560/default)/ch:0] CHN-1001 : Create
+2017-07-20 04:16:17,119 INFO  [IO-/127.0.0.1:62560] (q.m.c.close) - [con:0(guest@/127.0.0.1:62560/default)/ch:0] [con:0(guest@/127.0.0.1:62560/default)/ch:0] CHN-1003 : Close
+2017-07-20 04:16:17,119 INFO  [IO-/127.0.0.1:62560] (q.m.c.create) - [con:0(guest@/127.0.0.1:62560/default)/ch:0] CHN-1001 : Create
+2017-07-20 04:16:17,781 INFO  [IO-/127.0.0.1:62560] (o.a.q.s.t.NonBlockingConnection) - Exception performing I/O for connection '/127.0.0.1:62560' : An existing connection was forcibly closed by the remote host
+2017-07-20 04:16:17,783 INFO  [IO-/127.0.0.1:62560] (q.m.c.close) - [con:0(guest@/127.0.0.1:62560/default)] [con:0(guest@/127.0.0.1:62560/default)/ch:0] CHN-1003 : Close
+2017-07-20 04:16:17,799 INFO  [Broker-Config] (q.m.c.dropped_connection) - [con:0(guest@/127.0.0.1:62560/default)] CON-1004 : Connection dropped

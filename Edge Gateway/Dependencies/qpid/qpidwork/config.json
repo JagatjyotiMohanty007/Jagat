@@ -1,0 +1,100 @@
+{
+  "id" : "869d3116-49b9-4dc6-aed5-21f986e06fbf",
+  "name" : "${broker.name}",
+  "modelVersion" : "6.1",
+  "authenticationproviders" : [ {
+    "id" : "0c82bb12-0ec8-48d1-97eb-0a3ee73076ef",
+    "name" : "passwordFile",
+    "type" : "PlainPasswordFile",
+    "path" : "${qpid.home_dir}${file.separator}etc${file.separator}passwd"
+  } ],
+  "brokerloggers" : [ {
+    "id" : "480f7113-718a-4e34-be1f-f739c5707c56",
+    "name" : "logfile",
+    "type" : "File",
+    "fileName" : "${qpid.work_dir}${file.separator}log${file.separator}qpid.log",
+    "brokerloginclusionrules" : [ {
+      "id" : "ecaed5cb-f847-4d56-90d5-3e686400480e",
+      "name" : "Operational",
+      "type" : "NameAndLevel",
+      "level" : "INFO",
+      "loggerName" : "qpid.message.*"
+    }, {
+      "id" : "6788f9a1-eea3-4904-801d-88d9e6a54d61",
+      "name" : "Qpid",
+      "type" : "NameAndLevel",
+      "level" : "INFO",
+      "loggerName" : "org.apache.qpid.*"
+    }, {
+      "id" : "c2a54b08-6145-4b28-9eff-f965662b3eec",
+      "name" : "Root",
+      "type" : "NameAndLevel",
+      "level" : "WARN",
+      "loggerName" : "ROOT"
+    } ]
+  }, {
+    "id" : "a501524b-e1c1-4532-8086-f6c035b288ab",
+    "name" : "memory",
+    "type" : "Memory",
+    "brokerloginclusionrules" : [ {
+      "id" : "df72f1e4-8b11-4109-831e-d696491e5c88",
+      "name" : "Operational",
+      "type" : "NameAndLevel",
+      "level" : "INFO",
+      "loggerName" : "qpid.message.*"
+    }, {
+      "id" : "8cb8d06b-1cfb-4dc0-a6af-5cc5c1051cc9",
+      "name" : "Qpid",
+      "type" : "NameAndLevel",
+      "level" : "INFO",
+      "loggerName" : "org.apache.qpid.*"
+    }, {
+      "id" : "4d271139-e02c-44d7-afa8-31f7dbebd520",
+      "name" : "Root",
+      "type" : "NameAndLevel",
+      "level" : "WARN",
+      "loggerName" : "ROOT"
+    } ]
+  } ],
+  "plugins" : [ {
+    "id" : "e133d9ee-7f8b-49aa-9805-0954eee1de78",
+    "type" : "MANAGEMENT-HTTP",
+    "name" : "httpManagement"
+  } ],
+  "ports" : [ {
+    "id" : "a6e3ed42-3271-416a-a8c7-1afc2572d059",
+    "name" : "AMQP",
+    "port" : "${qpid.amqp_port}",
+    "authenticationProvider" : "passwordFile",
+    "virtualhostaliases" : [ {
+      "id" : "0631e177-7290-4d57-a2f0-fad54e64f1cd",
+      "name" : "defaultAlias",
+      "type" : "defaultAlias"
+    }, {
+      "id" : "cb6c82b4-0121-49ac-86ff-ec405d052110",
+      "name" : "hostnameAlias",
+      "type" : "hostnameAlias"
+    }, {
+      "id" : "932146ae-a0c0-404e-aece-eff7b7b1588c",
+      "name" : "nameAlias",
+      "type" : "nameAlias"
+    } ]
+  }, {
+    "id" : "d3d2efa4-961f-4f13-87ee-dc13b29b9407",
+    "name" : "HTTP",
+    "port" : "${qpid.http_port}",
+    "authenticationProvider" : "passwordFile",
+    "protocols" : [ "HTTP" ]
+  } ],
+  "virtualhostnodes" : [ {
+    "id" : "22f730d3-6eba-4fc6-a9e4-7fc6d521bb96",
+    "name" : "default",
+    "type" : "JSON",
+    "defaultVirtualHostNode" : "true",
+    "virtualHostInitialConfiguration" : "{}",
+    "lastUpdatedBy" : null,
+    "lastUpdatedTime" : 1500477204349,
+    "createdBy" : null,
+    "createdTime" : 1500477203771
+  } ]
+}
